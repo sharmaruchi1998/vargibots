@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Atemga 2560 - lab-in-a-box resources</title>
+        <title>Installation - lab-in-a-box resources</title>
 
 
         <!-- Custom HTML head -->
@@ -12,20 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="dev_boards/Atmega/toc.html" class="active">Atemga 2560</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="dev_boards/Atmega/installation.html">Installation</a></li><li class="chapter-item "><a href="dev_boards/Atmega/getting_started.html">Getting Started</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../dev_boards/Atmega/toc.html">Atemga 2560</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../dev_boards/Atmega/installation.html" class="active">Installation</a></li><li class="chapter-item "><a href="../../dev_boards/Atmega/getting_started.html">Getting Started</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,60 +139,115 @@
 
                 <div id="content" class="content">
                     <main>
-                        <center><h2 id="atmega2560-development-board"><a class="header" href="#atmega2560-development-board"> ATmega2560 Development Board</a></h2></center>
+                        <center><h2 id="installation-of-software"><a class="header" href="#installation-of-software"> Installation of Software </a></h2></center>
 <hr />
-<h3 id="about-the-development-board"><a class="header" href="#about-the-development-board">About the Development Board:</a></h3>
-<p><a href="https://robu.in/product/smartelex-atmega2560-development-board-with-lcd1602-lcd-display/">SmartElex ATMEGA2560 Development Board</a> is a powerful development platform based on ATMEGA2560 microcontroller which is one of the most feature-rich AVR microcontrollers from Atmel, featuring 256K Flash, 8K RAM, 86 I/O lines arranged in nine 8 bit ports, 16 ADCs, 4 UARTs, 6 timers, 8 interrupts and much more. This board is ideal for developing embedded applications involving high-speed wireless communication, USB-based data logging, real-time data monitoring, and control etc.</p>
-<ul>
-<li>Board Name: SmartElex ATmega2560 Development Board</li>
-<li>Microcontroller: ATMEGA2560 with 16 MHz crystal with On-Board USBASP Programmer.</li>
-<li>Power: 7 to 15 VDC with Reverse Polarity Protection.</li>
-<li>2.4GHz ZigBee (XBee) wireless module adaptor</li>
-<li>2×16 Character Alphanumeric LCD.</li>
-<li>SD card Holder.</li>
-<li>CH340G USB to Serial converter.</li>
-<li>ESP8255 Adaptor interface with USB to Serial Converter.</li>
-<li>Connector for 2 servo motors.</li>
-<li>DS1307 based Real-Time Clock with Battery Backup.</li>
-<li>ULN2003 7 channel 500mA driver.</li>
-<li>L293D 600mA Dual DC motor Driver.</li>
-<li>1 Analog Potentiometers, 8 Switches, 8 LEDs, Buzzer.</li>
-<li>Switches: Reset, Power (ON-OFF SWITCH).</li>
-<li>Male Burg Pin Connectors for all ports.</li>
-</ul>
-<p>Following image shows the components of Development Board:
-<br></p>
-<center><img src="./images/1_SmartElex_atmega2560.png" height="300" width="400"></center>
-<br>
-<p>Following table shows the specifications of the Development Board:</p>
-<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
-<tr><td>Micro Controller</td><td>ATmega2560</td></tr>
-<tr><td>Crystal Frequency (MHz)</td><td>16</td></tr>
-<tr><td>Input Voltage (V)</td><td>12</td></tr>
-<tr><td>Min-Max Input Voltage(V)</td><td>9 – 15</td></tr>
-<tr><td>DC plug-in jack</td><td>5 mm</td></tr>
-<tr><td>USB to Serial converter</td><td>CH340G</td></tr>
-<tr><td>RAM</td><td>8K</td></tr>
-<tr><td>ADC</td><td>16-channel, 10-bit</td></tr>
-<tr><td>On-board SMPS</td><td>TPS5430</td></tr>
-<tr><td>Length (mm)</td><td>127</td></tr>
-<tr><td>Width (mm)</td><td>100</td></tr>
-<tr><td>Height (mm)</td><td>18</td></tr>
-<tr><td>Weight (gm)</td><td>100</td></tr>
-</tbody></table>
-</div>
-<p>Extra Resources:</p>
+<h3 id="requirements"><a class="header" href="#requirements">Requirements</a></h3>
+<p>The installation of the software are tested on Windows 8 OR 10 (with 64-Bit), Ubuntu 16.04 OR 18.04 (with 64-Bit). You may choose to use either OS and follow the instructions respectively.</p>
+<hr />
+<h3 id="installation-instructions"><a class="header" href="#installation-instructions">Installation Instructions</a></h3>
+<p>This section contains instructions to install following software/libraries:</p>
 <ol>
-<li><a href="https://ww1.microchip.com/downloads/en/devicedoc/atmel-2549-8-bit-avr-microcontroller-atmega640-1280-1281-2560-2561_datasheet.pdf">Atmega2560 Datasheet</a></li>
-<li><a href="./resources/SmartElex-ATMEGA32-Dev-Board_FINAL.pdf">Development Board Manual</a></li>
+<li>Visual Studio Code</li>
+<li>AVR Building Tools</li>
+<li>AVRDUDESS</li>
 </ol>
+<hr />
+<h4 id="1-visual-studio-code"><a class="header" href="#1-visual-studio-code">1. Visual Studio Code:</a></h4>
+<p>Visual Studio Code is a cross-platform free and open-source code editor made by Microsoft. Features include support for debugging, syntax highlighting, intelligent code completion, snippets, code refactoring and embedded Git. Users can change the theme, keyboard shortcuts, preferences and install extensions that add additional functionality.</p>
+<h4 id="installation-steps"><a class="header" href="#installation-steps">Installation Steps:</a></h4>
+<h5 id="for-ubuntu"><a class="header" href="#for-ubuntu">For Ubuntu</a></h5>
+<ul>
+<li>
+<p>Download VS Code for Linux for 64-bit Linux from this <a href="https://code.visualstudio.com/docs/?dv=linux64_deb" target="blank">page</a>. The software with latest version named <em><strong>code_x.y.z-abcdefgh_amd64.deb</strong></em> (here, letters are digits of VS Code major and build version) will be downloaded.</p>
+</li>
+<li>
+<p>Open Terminal and navigate to the directory where this file is downloaded. Run the following command on the Terminal:</p>
+<pre><code class="language-shell">sudo dpkg --install code_1.55.1-1617808414_amd64.deb
+</code></pre>
+<p><strong>Note:</strong> The <strong>.deb</strong> file name may be different at your end as this software is timely updated.</p>
+</li>
+</ul>
+<h5 id="for-windows"><a class="header" href="#for-windows">For Windows</a></h5>
+<ul>
+<li>
+<p>Download VS Code for Windows from this <a href="https://code.visualstudio.com/download" target="blank">page</a>.</p>
+</li>
+<li>
+<p>Navigate to the directory where the above <code>.exe</code> file is downloaded. </p>
+</li>
+<li>
+<p>Run the <code>.exe</code> file by double clicking on it. </p>
+</li>
+</ul>
+<p>VS Code is now installed on your machine.</p>
+<p>Open <strong>VS Code</strong> by searching for it after clicking the <em>Show Applications</em> icon at the bottom-left corner.</p>
+<br>
+  <center><img src="https://raw.githubusercontent.com/eyantra/embedded_systems/master/Phase_1/assets/vs_code/vs_code_launch_screen.png" alt="vs_code_launch_screen" style="width:70%"/> </center>
+<br>
+<blockquote>
+<p>Refer <a href="https://code.visualstudio.com/docs/getstarted/userinterface" target="blank">this document</a> to learn about the User Interface of this software and their use.</p>
+</blockquote>
+<hr />
+<h4 id="2-avr-building-tools"><a class="header" href="#2-avr-building-tools">2. AVR Building Tools</a></h4>
+<h5 id="for-ubuntu-1"><a class="header" href="#for-ubuntu-1">For Ubuntu</a></h5>
+<ul>
+<li>Install AVRDUDE and AVR-GCC:
+<pre><code>sudo apt-get install avrdude gcc-avr avr-libc
+</code></pre>
+</li>
+</ul>
+<h5 id="for-windows-1"><a class="header" href="#for-windows-1">For Windows</a></h5>
+<ul>
+<li>
+<p>Download <a href="https://drive.google.com/file/d/1SPfDLR5W7NwyouFPA8OqjyMHUML3IRWE/view?usp=sharing">WinAVR</a> zip file and extract it.</p>
+</li>
+<li>
+<p>Run <code>.exe</code> file to install AVR-GCC Toolchain and AVRDUDE.</p>
+</li>
+</ul>
+<hr />
+<h4 id="3-avrdudess--a-gui-for-avrdude"><a class="header" href="#3-avrdudess--a-gui-for-avrdude">3. AVRDUDESS – A GUI for AVRDUDE</a></h4>
+<p><a href="https://blog.zakkemble.net/avrdudess-a-gui-for-avrdude/">AVRDUDESS</a> is a GUI for AVRDUDE, a tool for programming Atmel microcontrollers. </p>
+<br>
+  <center><img src="./images/2_avrdudess.png" height="500" width="500"></center>
+<br>
+<h4 id="installation-steps-1"><a class="header" href="#installation-steps-1">Installation Steps:</a></h4>
+<h5 id="for-ubuntu-2"><a class="header" href="#for-ubuntu-2">For Ubuntu</a></h5>
+<ul>
+<li>
+<p>Install Mono:</p>
+<pre><code>sudo apt-get install libmono-system-windows-forms4.0-cil
+</code></pre>
+<p>On older versions of Ubuntu you might need to use <code>libmono-winforms2.0-cil</code> instead. </p>
+</li>
+<li>
+<p>Download <a href="https://github.com/ZakKemble/AVRDUDESS/releases/download/v2.14/AVRDUDESS-2.14-portable.zip">AVRDUDESS</a> zip file and extract it.</p>
+</li>
+<li>
+<p>Run AVRDUDESS with mono, you might have to run as root (sudo) so that AVRDUDE can access ports if you haven’t changed any permissions or rules.d stuff:</p>
+<pre><code>mono avrdudess.exe
+</code></pre>
+</li>
+</ul>
+<h5 id="for-windows-2"><a class="header" href="#for-windows-2">For Windows</a></h5>
+<ul>
+<li>
+<p>Download <a href="https://github.com/ZakKemble/AVRDUDESS/releases/download/v2.14/AVRDUDESS-2.14-setup.exe">AVRDUDESS</a> <code>.exe</code> file.</p>
+</li>
+<li>
+<p>Double click on <code>.exe</code> file to open a GUI.</p>
+</li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../dev_boards/Atmega/toc.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
 
-                            <a rel="next" href="dev_boards/Atmega/installation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="../../dev_boards/Atmega/getting_started.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -202,8 +257,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../dev_boards/Atmega/toc.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
 
-                    <a rel="next" href="dev_boards/Atmega/installation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="../../dev_boards/Atmega/getting_started.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -234,13 +292,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
 

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Atemga 2560 - lab-in-a-box resources</title>
+        <title>Getting Started - lab-in-a-box resources</title>
 
 
         <!-- Custom HTML head -->
@@ -12,20 +12,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
 
-        <link rel="icon" href="favicon.svg">
-        <link rel="shortcut icon" href="favicon.png">
-        <link rel="stylesheet" href="css/variables.css">
-        <link rel="stylesheet" href="css/general.css">
-        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
 
         <!-- Fonts -->
-        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
-        <link rel="stylesheet" href="fonts/fonts.css">
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
@@ -35,7 +35,7 @@
     <body>
         <!-- Provide site root to javascript -->
         <script>
-            var path_to_root = "";
+            var path_to_root = "../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
 
@@ -81,7 +81,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="dev_boards/Atmega/toc.html" class="active">Atemga 2560</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="dev_boards/Atmega/installation.html">Installation</a></li><li class="chapter-item "><a href="dev_boards/Atmega/getting_started.html">Getting Started</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../dev_boards/Atmega/toc.html">Atemga 2560</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dev_boards/Atmega/installation.html">Installation</a></li><li class="chapter-item expanded "><a href="../../dev_boards/Atmega/getting_started.html" class="active">Getting Started</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,62 +139,106 @@
 
                 <div id="content" class="content">
                     <main>
-                        <center><h2 id="atmega2560-development-board"><a class="header" href="#atmega2560-development-board"> ATmega2560 Development Board</a></h2></center>
+                        <center><h2 id="getting-started-with-your-first-experiment"><a class="header" href="#getting-started-with-your-first-experiment"> Getting Started with your First Experiment </a></h2></center>
 <hr />
-<h3 id="about-the-development-board"><a class="header" href="#about-the-development-board">About the Development Board:</a></h3>
-<p><a href="https://robu.in/product/smartelex-atmega2560-development-board-with-lcd1602-lcd-display/">SmartElex ATMEGA2560 Development Board</a> is a powerful development platform based on ATMEGA2560 microcontroller which is one of the most feature-rich AVR microcontrollers from Atmel, featuring 256K Flash, 8K RAM, 86 I/O lines arranged in nine 8 bit ports, 16 ADCs, 4 UARTs, 6 timers, 8 interrupts and much more. This board is ideal for developing embedded applications involving high-speed wireless communication, USB-based data logging, real-time data monitoring, and control etc.</p>
-<ul>
-<li>Board Name: SmartElex ATmega2560 Development Board</li>
-<li>Microcontroller: ATMEGA2560 with 16 MHz crystal with On-Board USBASP Programmer.</li>
-<li>Power: 7 to 15 VDC with Reverse Polarity Protection.</li>
-<li>2.4GHz ZigBee (XBee) wireless module adaptor</li>
-<li>2×16 Character Alphanumeric LCD.</li>
-<li>SD card Holder.</li>
-<li>CH340G USB to Serial converter.</li>
-<li>ESP8255 Adaptor interface with USB to Serial Converter.</li>
-<li>Connector for 2 servo motors.</li>
-<li>DS1307 based Real-Time Clock with Battery Backup.</li>
-<li>ULN2003 7 channel 500mA driver.</li>
-<li>L293D 600mA Dual DC motor Driver.</li>
-<li>1 Analog Potentiometers, 8 Switches, 8 LEDs, Buzzer.</li>
-<li>Switches: Reset, Power (ON-OFF SWITCH).</li>
-<li>Male Burg Pin Connectors for all ports.</li>
-</ul>
-<p>Following image shows the components of Development Board:
-<br></p>
-<center><img src="./images/1_SmartElex_atmega2560.png" height="300" width="400"></center>
-<br>
-<p>Following table shows the specifications of the Development Board:</p>
-<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
-<tr><td>Micro Controller</td><td>ATmega2560</td></tr>
-<tr><td>Crystal Frequency (MHz)</td><td>16</td></tr>
-<tr><td>Input Voltage (V)</td><td>12</td></tr>
-<tr><td>Min-Max Input Voltage(V)</td><td>9 – 15</td></tr>
-<tr><td>DC plug-in jack</td><td>5 mm</td></tr>
-<tr><td>USB to Serial converter</td><td>CH340G</td></tr>
-<tr><td>RAM</td><td>8K</td></tr>
-<tr><td>ADC</td><td>16-channel, 10-bit</td></tr>
-<tr><td>On-board SMPS</td><td>TPS5430</td></tr>
-<tr><td>Length (mm)</td><td>127</td></tr>
-<tr><td>Width (mm)</td><td>100</td></tr>
-<tr><td>Height (mm)</td><td>18</td></tr>
-<tr><td>Weight (gm)</td><td>100</td></tr>
-</tbody></table>
-</div>
-<p>Extra Resources:</p>
 <ol>
-<li><a href="https://ww1.microchip.com/downloads/en/devicedoc/atmel-2549-8-bit-avr-microcontroller-atmega640-1280-1281-2560-2561_datasheet.pdf">Atmega2560 Datasheet</a></li>
-<li><a href="./resources/SmartElex-ATMEGA32-Dev-Board_FINAL.pdf">Development Board Manual</a></li>
+<li>For our first program we will play with the buzzer which is already interfaced in Atmega2560 Development Board. Make sure that jumper <strong>J29</strong> is connected.
+Following picture shows how jumper is connected and where it is located.</li>
 </ol>
+<br>
+  <center><img src="./images/buzzer_jumper.jpg" height="300" width="200"></center>
+<br>
+<ol start="2">
+<li>
+<p>Buzzer connection with Atmega2560 </p>
+<ul>
+<li><strong>Buzzer</strong> : <strong><code>PH2</code></strong></li>
+</ul>
+</li>
+<li>
+<p>Download <a href="./resources/Buzzer.c">Buzzer.c</a>. Right-click on the hyperlink and select Save Link As... option to download. </p>
+</li>
+<li>
+<p>Open the downloaded <code>Buzzer.c</code> file in  Visual Studio Code (VSCode). </p>
+<p>Following code is present in <code>Buzzer.c</code> file:</p>
+<pre><code class="language-c">#define F_CPU 16000000UL            // Crystal Frequency of Atmega2560 
+
+#include &lt;avr/io.h&gt;                 // Standard AVR IO Library
+#include &lt;util/delay.h&gt;             // Standard AVR Delay Library
+
+int main(void)
+{
+    DDRH=0XFF;                       // Initialize buzzer pin PH2 as output
+    while(1)
+    {
+        PORTH = 0x00;                // Turn ON the buzzer
+        _delay_ms(1000);
+        PORTH = 0xFF;                // Turn OFF the buzzer 
+        _delay_ms(1000);
+
+    }
+}
+</code></pre>
+</li>
+<li>
+<p>Open terminal in VSCode using Terminal &gt; New Terminal or just use shortcut Ctrl+Shift+`. Type the following command in the terminal to generate the <code>Buzzer.hex</code> file:</p>
+<pre><code class="language-shell">avr-gcc -Wall -g -Os -mmcu=atmega2560 -o Buzzer.hex Buzzer.c 
+</code></pre>
+</li>
+<li>
+<p>You will see <code>Buzzer.hex</code> file generated in the same folder where <code>Buzzer.c</code> file is present. </p>
+</li>
+<li>
+<p>Next step is to flash hex file into the microcontroller. To do so we will use <strong>USBASP</strong> follow the steps given below:</p>
+<ul>
+<li>Make sure that the jumper J8 position is as shown below to select <strong>USBASP</strong>:
+<br></li>
+</ul>
+<center><img src="./images/USBASP_jumper.jpg" height="300" width="200"></center>
+ <br>
+<ul>
+<li>
+<p>Connect Micro USB Cable at <strong><code>J7</code></strong> (Flip the board, you will see &quot;USBASP&quot; written in the board)</p>
+</li>
+<li>
+<p>Open <strong>AVRDUDESS</strong> software by double clicking on the executable in windows and for Ubuntu users run the following command where executable is present:</p>
+<pre><code>mono avrdudess.exe
+</code></pre>
+</li>
+<li>
+<p>From the <em><strong>Programmer (-c)</strong></em> dropdown select <em><strong>Any usbasp clone with correct VID/PID</strong></em></p>
+</li>
+<li>
+<p>From the <em><strong>MCU (-p)</strong></em> directly click on <strong>Detect</strong> which will automatically select the board details. After above two steps, your screen should look like following image.</p>
+<br>
+  <center><img src="./images/1_avrdudess.png" height="500" width="500"></center>
+  <br>
+</li>
+<li>
+<p>From the <em><strong>Flash</strong></em> section click on three dots and select the <strong><code>Buzzer.hex</code></strong> file. </p>
+<br>
+  <center><img src="./images/2_avrdudess_programmer.png" height="500" width="500"></center>
+  <br>
+</li>
+<li>
+<p>Finally click on <em><strong>Program</strong></em> to burn the hex file in the microcontroller. You'll see the following output in <strong>AVRDUDESS</strong> and buzzer should start beeping. </p>
+<br>
+  <center><img src="./images/2_avrdudess_programmer.png" height="500" width="500"></center>
+  <br>
+</li>
+</ul>
+</li>
+</ol>
+<hr />
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-
-                            <a rel="next" href="dev_boards/Atmega/installation.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
+                            <a rel="prev" href="../../dev_boards/Atmega/installation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
                             </a>
+
 
                         <div style="clear: both"></div>
                     </nav>
@@ -202,10 +246,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-
-                    <a rel="next" href="dev_boards/Atmega/installation.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
+                    <a rel="prev" href="../../dev_boards/Atmega/installation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
                     </a>
+
             </nav>
 
         </div>
@@ -234,13 +278,13 @@
         </script>
 
 
-        <script src="elasticlunr.min.js"></script>
-        <script src="mark.min.js"></script>
-        <script src="searcher.js"></script>
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
 
-        <script src="clipboard.min.js"></script>
-        <script src="highlight.js"></script>
-        <script src="book.js"></script>
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
 
         <!-- Custom JS scripts -->
 
